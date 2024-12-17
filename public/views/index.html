@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpreadShit</title>
+
+    <!-- <script src="../../node_modules/@socket.io/component-emitter/lib/esm/index.js"></script> -->
+
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="/jsuites.css">
+    <link rel="stylesheet" href="/jspreadsheet-ce.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3045/3045706.png" type="image/png">
+    <script src="/jspreadsheet-ce.js"></script>
+    <script src="/jsuites.js"></script>
+    <script src="/socket.io.js"></script>
+    <script src="/scripts.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Edição de Planilha Simultânea</h1>
+    </div>
+    <div class="container">
+        <!-- Bloco da Planilha -->
+        <div class="spreadsheet-container">
+            <h2>Planilha</h2>
+            <div id="spreadsheet"></div>
+
+        </div>
+
+        <!-- Bloco do Chat -->
+        <div class="chat-container">
+            <h2>Chat</h2>
+            <div class="chat-box" id="chatBox">
+                <div class="messages"></div>
+            </div>
+            <div class="chat-input">
+                <form id="chat">
+
+                    <input type="text" name="username" class="form-item" placeholder="Digite um usuário">
+
+                    <input type="text" name="message" placeholder="Digite sua mensagem">
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

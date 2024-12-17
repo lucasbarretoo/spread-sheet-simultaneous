@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+
+  game-websocket:
+    image: game-websocket
+    privileged: true 
+    container_name : game-websocket
+    volumes:
+      - ./:/projeto/
+      - /dev/bus/usb:/dev/bus/usb
+    network_mode: "host"
+    command: ["sleep","infinity"]
